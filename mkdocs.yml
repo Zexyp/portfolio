@@ -25,6 +25,22 @@ theme:
       toggle:
         icon: material/lightbulb-outline
         name: Let the system decide
+  features:
+    - navigation.tabs
+    - navigation.path
+    - navigation.top
+
+nav:
+  - Home: index.md
+  - Gallery: .
+  - Blog: .
 
 extra_css:
   - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: octicons/mark-github-16
+      link: https://github.com/Zexyp/
+    - icon: simple/blender
+      link: https://extensions.blender.org/author/1824/
