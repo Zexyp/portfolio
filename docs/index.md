@@ -1,5 +1,6 @@
 ---
-
+template: home.html
+hide: top
 ---
 
 # Welcome to MkDocs
