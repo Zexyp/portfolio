@@ -231,7 +231,7 @@
 }
 
 .mdx-hero__scrollwrap {
-  height: 80vh;
+  height: calc(100vh - 20em);
   margin-bottom: -100vh;
   position: absolute;
   display: block;
@@ -239,6 +239,12 @@
   z-index: 9;
   max-width: 100%;
   width: 100%;
+}
+
+@media screen and (max-width:76.25em) {
+  .mdx-hero__scrollwrap {
+    height: calc(100vh - 10em);
+  }
 }
 
 .mdx-hero__inner {
@@ -294,13 +300,19 @@
 
 .mdx-hero__more {
   animation: bounce 2s cubic-bezier(.4, 0, .2, 1) infinite;
-  bottom: -7.4rem;
+  bottom: -12em;
   display: block;
   left: 50%;
   margin-left: -.6rem;
   pointer-events: none;
   position: absolute;
   text-align: center
+}
+
+@media screen and (max-width:76.25em) {
+  .mdx-hero__more {
+    bottom: -8em;
+  }
 }
 
 .mdx-hero__more svg {
