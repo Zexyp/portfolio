@@ -1,11 +1,6 @@
-<style>
-    img {
-        border: 2px solid red;
-        background: red;
-    }
-</style>
+# Brand Guidelines
 
-# Logo Manual
+helpoop
 
 ## Variants
 ### Full
@@ -44,9 +39,11 @@ BW and WB.
 > The checkmars are only for good feeling. They are also a don't!
 
 ![alt text](assets/fucked-safe-areas.png)
+
 - Do use allowed safe areas. Choose by situation.
 - Don't use inappropriate safe areas.
 
 ![alt text](assets/fucked-rotation.png)
+
 - Do leave the logo without rotating.
 - Don't rotate the logo.

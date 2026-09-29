@@ -1,6 +1,12 @@
 site_name: Zexyp
 site_description: Technical Artist
 
+plugins:
+  - blog:
+      blog_dir: blog
+  - blog:
+      blog_dir: gallery
+
 theme:
   favicon: assets/images/favicon.png
   logo: assets/images/logo.png
@@ -35,7 +41,7 @@ theme:
 nav:
   - Home: index.md
   - Gallery: gallery/index.md
-  - Blog: .
+  - Blog: blog/index.md
 
 extra_css:
   - stylesheets/extra.css
