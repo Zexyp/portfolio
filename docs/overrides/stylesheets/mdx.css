@@ -1,11 +1,15 @@
 .mdx-parallax {
   height: 100vh;
-  margin-top: -2.4rem;
+  margin-top: calc(var(--zx-logo-height) * -1);
   overflow: hidden auto;
   overscroll-behavior-y: none;
   perspective: var(--md-parallax-perspective);
   scroll-behavior: smooth;
-  width: 100vw
+  width: 100vw;
+}
+
+.mdx-parallax__header {
+  margin-top: var(--zx-logo-height);
 }
 
 .mdx-parallax__group {
@@ -13,7 +17,7 @@
   color: var(--md-typeset-color);
   display: block;
   position: relative;
-  transform-style: preserve-3d
+  transform-style: preserve-3d;
 }
 
 .mdx-parallax__group:first-child {
@@ -110,7 +114,7 @@
 }
 
 .mdx-content__column:last-child {
-  margin-top: 2.4rem
+  margin-top: var(--zx-logo-height);
 }
 
 .mdx-content__column p:last-child {
@@ -140,7 +144,6 @@
 
 .mdx-connect {
   display: block;
-  transition: transform .75s cubic-bezier(.075, .85, .175, 1) 125ms, opacity .75s 125ms
 }
 
 .mdx-connect .mdx-connect__link {
@@ -153,7 +156,7 @@
 }
 
 .mdx-expect {
-  margin: 2.4rem 0
+  margin: var(--zx-logo-height) 0
 }
 
 .mdx-expect__list {
@@ -168,31 +171,6 @@
   flex: 1 0 48%;
   gap: .6rem;
   margin: 0;
-  transition: transform .75s cubic-bezier(.075, .85, .175, 1), opacity .75s
-}
-
-.mdx-expect__item:first-child {
-  transition-delay: .2s
-}
-
-.mdx-expect__item:nth-child(2) {
-  transition-delay: 275ms
-}
-
-.mdx-expect__item:nth-child(3) {
-  transition-delay: .35s
-}
-
-.mdx-expect__item:nth-child(4) {
-  transition-delay: 425ms
-}
-
-.mdx-expect__item:nth-child(5) {
-  transition-delay: .5s
-}
-
-.mdx-expect__item:nth-child(6) {
-  transition-delay: 575ms
 }
 
 .mdx-expect__icon {
@@ -231,7 +209,7 @@
 }
 
 .mdx-hero__scrollwrap {
-  height: calc(100vh - 16em);
+  height: 100vh;
   margin-bottom: -100vh;
   position: absolute;
   display: block;
@@ -248,17 +226,10 @@
 }
 
 .mdx-hero__inner {
-  bottom: 3.2rem;
+  bottom: 0;
   display: block;
   position: absolute;
-  transition: transform .4s cubic-bezier(.1, .7, .1, 1), opacity .25s;
   width: 100%
-}
-
-@media screen and (max-width:44.984375em) {
-  .mdx-hero__inner {
-    bottom: 6.4rem
-  }
 }
 
 .mdx-hero__teaser {
@@ -268,6 +239,7 @@
   max-width: 27rem;
   margin-left: 5%;
   margin-right: 5%;
+  margin-bottom: 12em;
 }
 
 .mdx-hero__teaser h1 {
@@ -283,13 +255,12 @@
 .mdx-hero .mdx-hero__attribution {
   background-color: var(--md-default-bg-color--light);
   border-radius: .1rem;
-  bottom: -2.4rem;
+  bottom: calc(var(--zx-logo-height) * -1);
   color: var(--md-default-fg-color);
   font-size: .5rem;
   padding: .1rem .4rem;
   position: absolute;
   right: .8rem;
-  transition: color 125ms, background-color 125ms
 }
 
 .mdx-hero .mdx-hero__attribution:focus,
@@ -300,18 +271,18 @@
 
 .mdx-hero__more {
   animation: bounce 2s cubic-bezier(.4, 0, .2, 1) infinite;
-  bottom: -16em;
+  bottom: 10em;
   display: block;
   left: 50%;
   margin-left: -.6rem;
   pointer-events: none;
   position: absolute;
-  text-align: center
+  text-align: center;
 }
 
 @media screen and (max-width:76.25em) {
   .mdx-hero__more {
-    bottom: -8em;
+    bottom: 6em;
   }
 }
 
@@ -353,7 +324,6 @@
 .mdx-spotlight__feature>a {
   display: block;
   flex-shrink: 0;
-  transition: transform .5s cubic-bezier(.075, .85, .175, 1)
 }
 
 @media screen and (max-width:59.984375em) {
@@ -376,11 +346,6 @@
   width: 25rem
 }
 
-.mdx-spotlight__feature a>img,
-.mdx-spotlight__feature figcaption {
-  transition: transform .75s cubic-bezier(.075, .85, .175, 1) 125ms, opacity .75s 125ms
-}
-
 .mdx-spotlight__feature figcaption {
   margin-top: .8rem
 }
@@ -388,13 +353,12 @@
 .mdx-trust {
   display: block;
   max-width: 40rem;
-  transition: transform .75s cubic-bezier(.075, .85, .175, 1) 125ms, opacity .75s 125ms
 }
 
 .mdx-users {
   display: flex;
   gap: 3.2rem;
-  margin: 2.4rem 0
+  margin: calc(var(--zx-logo-height) * -1) 0
 }
 
 @media screen and (max-width:59.984375em) {
@@ -412,30 +376,12 @@
   text-align: center
 }
 
-.mdx-users__testimonial:first-child {
-  transition-delay: .2s
-}
-
-.mdx-users__testimonial:nth-child(2) {
-  transition-delay: 275ms
-}
-
-.mdx-users__testimonial:nth-child(3) {
-  transition-delay: .35s
-}
-
 .mdx-users__testimonial img {
   border-radius: 5rem;
   height: auto;
   margin-left: auto;
   margin-right: auto;
   width: 10rem
-}
-
-.mdx-users__testimonial figcaption,
-.mdx-users__testimonial img {
-  transition: transform .75s cubic-bezier(.075, .85, .175, 1), opacity .75s;
-  transition-delay: inherit
 }
 
 .mdx-users__testimonial figcaption {

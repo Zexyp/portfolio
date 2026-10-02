@@ -1,16 +1,29 @@
+{% extends "main.html" %}
 
 {% block extrahead %}
-<link rel="stylesheet" href="{{ 'overrides/stylesheets/home.css' | url }}"/> 
-<link rel="stylesheet" href="{{ 'overrides/stylesheets/mdx.css' | url }}"/> 
-{% endblock %} 
-
-{% extends "main.html" %}
+<link rel="stylesheet" href="{{ 'overrides/stylesheets/home.css' | url }}" />
+<link rel="stylesheet" href="{{ 'overrides/stylesheets/mdx.css' | url }}" />
+{% endblock %}
 
 <!-- Render hero under tabs -->
 {% block tabs %}
-<!--{{ super() }}-->
+<style>
+.md-tabs .md-tabs__link,
+.md-tabs[hidden] .md-tabs__link {
+  opacity: .7;
+  transform: none;
+}
 
-<div class="md-container" data-md-component="container">
+.md-tabs .md-tabs__link:hover,
+.md-tabs[hidden] .md-tabs__link:hover {
+  opacity: 1;
+}
+
+.md-tabs[hidden] {
+    pointer-events: initial;
+}
+</style>
+<div class="md-container ff-hack safari" data-md-component="container">
     <div class="mdx-parallax" data-mdx-component="parallax">
         <section class="mdx-parallax__group">
             <picture class="mdx-parallax__layer" style="--md-parallax-depth: 8;--md-image-position: 70%">
@@ -28,21 +41,25 @@
             <div class="mdx-parallax__layer mdx-parallax__blend"></div>
             <div class="mdx-hero" data-mdx-component="hero">
                 <div class="mdx-hero__scrollwrap md-grid">
+                    <div class="mdx-parallax__header">
+                        {{ super() }}
+                    </div>
                     <div class="mdx-hero__inner">
                         <div class="mdx-hero__teaser md-typeset">
                             <h1>Technical Artist</h1>
                             <p>
-                                Where my 3D and programming skillsets meet.<br/>
+                                Where my 3D and programming skillsets meet.<br />
                                 Passion for details is what makes it happen.
                             </p>
                             <a href="gallery/" class="md-button"> See Work </a>
-                            <a href="#everything-you-would-expect" class="md-button md-button--secondary"> Learn more </a>
+                            <a href="#everything-you-would-expect" class="md-button md-button--secondary"> Learn more
+                            </a>
                         </div>
                         <div class="mdx-hero__more">
                             <a href="#everything-you-would-expect">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M11 4h2v12l5.5-5.5 1.42 1.42L12 19.84l-7.92-7.92L5.5 10.5 11 16z"></path>
-                            </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M11 4h2v12l5.5-5.5 1.42 1.42L12 19.84l-7.92-7.92L5.5 10.5 11 16z"></path>
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -61,23 +78,48 @@
                         <ul class="mdx-expect__list">
                             <li class="mdx-expect__item md-typeset">
                                 <div class="mdx-expect__icon glow-logo">
-                                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Blender</title><path d="M12.51 13.214c.046-.8.438-1.506 1.03-2.006a3.424 3.424 0 0 1 2.212-.79c.85 0 1.631.3 2.211.79.592.5.983 1.206 1.028 2.005.045.823-.285 1.586-.865 2.153a3.389 3.389 0 0 1-2.374.938 3.393 3.393 0 0 1-2.376-.938c-.58-.567-.91-1.33-.865-2.152M7.35 14.831c.006.314.106.922.256 1.398a7.372 7.372 0 0 0 1.593 2.757 8.227 8.227 0 0 0 2.787 2.001 8.947 8.947 0 0 0 3.66.76 8.964 8.964 0 0 0 3.657-.772 8.285 8.285 0 0 0 2.785-2.01 7.428 7.428 0 0 0 1.592-2.762 6.964 6.964 0 0 0 .25-3.074 7.123 7.123 0 0 0-1.016-2.779 7.764 7.764 0 0 0-1.852-2.043h.002L13.566 2.55l-.02-.015c-.492-.378-1.319-.376-1.86.002-.547.382-.609 1.015-.123 1.415l-.001.001 3.126 2.543-9.53.01h-.013c-.788.001-1.545.518-1.695 1.172-.154.665.38 1.217 1.2 1.22V8.9l4.83-.01-8.62 6.617-.034.025c-.813.622-1.075 1.658-.563 2.313.52.667 1.625.668 2.447.004L7.414 14s-.069.52-.063.831zm12.09 1.741c-.97.988-2.326 1.548-3.795 1.55-1.47.004-2.827-.552-3.797-1.538a4.51 4.51 0 0 1-1.036-1.622 4.282 4.282 0 0 1 .282-3.519 4.702 4.702 0 0 1 1.153-1.371c.942-.768 2.141-1.183 3.396-1.185 1.256-.002 2.455.41 3.398 1.175.48.391.87.854 1.152 1.367a4.28 4.28 0 0 1 .522 1.706 4.236 4.236 0 0 1-.239 1.811 4.54 4.54 0 0 1-1.035 1.626"/></svg>
+                                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <title>Blender</title>
+                                        <path
+                                            d="M12.51 13.214c.046-.8.438-1.506 1.03-2.006a3.424 3.424 0 0 1 2.212-.79c.85 0 1.631.3 2.211.79.592.5.983 1.206 1.028 2.005.045.823-.285 1.586-.865 2.153a3.389 3.389 0 0 1-2.374.938 3.393 3.393 0 0 1-2.376-.938c-.58-.567-.91-1.33-.865-2.152M7.35 14.831c.006.314.106.922.256 1.398a7.372 7.372 0 0 0 1.593 2.757 8.227 8.227 0 0 0 2.787 2.001 8.947 8.947 0 0 0 3.66.76 8.964 8.964 0 0 0 3.657-.772 8.285 8.285 0 0 0 2.785-2.01 7.428 7.428 0 0 0 1.592-2.762 6.964 6.964 0 0 0 .25-3.074 7.123 7.123 0 0 0-1.016-2.779 7.764 7.764 0 0 0-1.852-2.043h.002L13.566 2.55l-.02-.015c-.492-.378-1.319-.376-1.86.002-.547.382-.609 1.015-.123 1.415l-.001.001 3.126 2.543-9.53.01h-.013c-.788.001-1.545.518-1.695 1.172-.154.665.38 1.217 1.2 1.22V8.9l4.83-.01-8.62 6.617-.034.025c-.813.622-1.075 1.658-.563 2.313.52.667 1.625.668 2.447.004L7.414 14s-.069.52-.063.831zm12.09 1.741c-.97.988-2.326 1.548-3.795 1.55-1.47.004-2.827-.552-3.797-1.538a4.51 4.51 0 0 1-1.036-1.622 4.282 4.282 0 0 1 .282-3.519 4.702 4.702 0 0 1 1.153-1.371c.942-.768 2.141-1.183 3.396-1.185 1.256-.002 2.455.41 3.398 1.175.48.391.87.854 1.152 1.367a4.28 4.28 0 0 1 .522 1.706 4.236 4.236 0 0 1-.239 1.811 4.54 4.54 0 0 1-1.035 1.626" />
+                                    </svg>
                                 </div>
                                 <div class="mdx-expect__description">
                                     <h2>Blender my beloved</h2>
                                     <p>
-                                        My journey started before the hypetrain while 2.79b was the latest and greatest release (circa 2017 AD).
+                                        My journey started before the hypetrain (circa 2018 AD) while 2.79b was the
+                                        latest and greatest release.
                                     </p>
                                 </div>
                             </li>
                             <li class="mdx-expect__item md-typeset">
                                 <div class="mdx-expect__icon glow-logo">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M392.8 65.2C375.8 60.3 358.1 70.2 353.2 87.2L225.2 535.2C220.3 552.2 230.2 569.9 247.2 574.8C264.2 579.7 281.9 569.8 286.8 552.8L414.8 104.8C419.7 87.8 409.8 70.1 392.8 65.2zM457.4 201.3C444.9 213.8 444.9 234.1 457.4 246.6L530.8 320L457.4 393.4C444.9 405.9 444.9 426.2 457.4 438.7C469.9 451.2 490.2 451.2 502.7 438.7L598.7 342.7C611.2 330.2 611.2 309.9 598.7 297.4L502.7 201.4C490.2 188.9 469.9 188.9 457.4 201.4zM182.7 201.3C170.2 188.8 149.9 188.8 137.4 201.3L41.4 297.3C28.9 309.8 28.9 330.1 41.4 342.6L137.4 438.6C149.9 451.1 170.2 451.1 182.7 438.6C195.2 426.1 195.2 405.8 182.7 393.3L109.3 320L182.6 246.6C195.1 234.1 195.1 213.8 182.6 201.3z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                        <path
+                                            d="M392.8 65.2C375.8 60.3 358.1 70.2 353.2 87.2L225.2 535.2C220.3 552.2 230.2 569.9 247.2 574.8C264.2 579.7 281.9 569.8 286.8 552.8L414.8 104.8C419.7 87.8 409.8 70.1 392.8 65.2zM457.4 201.3C444.9 213.8 444.9 234.1 457.4 246.6L530.8 320L457.4 393.4C444.9 405.9 444.9 426.2 457.4 438.7C469.9 451.2 490.2 451.2 502.7 438.7L598.7 342.7C611.2 330.2 611.2 309.9 598.7 297.4L502.7 201.4C490.2 188.9 469.9 188.9 457.4 201.4zM182.7 201.3C170.2 188.8 149.9 188.8 137.4 201.3L41.4 297.3C28.9 309.8 28.9 330.1 41.4 342.6L137.4 438.6C149.9 451.1 170.2 451.1 182.7 438.6C195.2 426.1 195.2 405.8 182.7 393.3L109.3 320L182.6 246.6C195.1 234.1 195.1 213.8 182.6 201.3z" />
+                                    </svg>
                                 </div>
                                 <div class="mdx-expect__description">
                                     <h2>Language is a tool</h2>
                                     <p>
-                                        I've laid my fingers on all the programming languages you can imagine except those you don't want to.
+                                        I've laid my fingers on all the programming languages you want except those you
+                                        don't want to even imagine.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="mdx-expect__item md-typeset">
+                                <div class="mdx-expect__icon glow-logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                        <path
+                                            d="M541.4 162.6C549 155 561.7 156.9 565.5 166.9C572.3 184.6 576 203.9 576 224C576 312.4 504.4 384 416 384C398.5 384 381.6 381.2 365.8 376L178.9 562.9C150.8 591 105.2 591 77.1 562.9C49 534.8 49 489.2 77.1 461.1L264 274.2C258.8 258.4 256 241.6 256 224C256 135.6 327.6 64 416 64C436.1 64 455.4 67.7 473.1 74.5C483.1 78.3 484.9 91 477.4 98.6L388.7 187.3C385.7 190.3 384 194.4 384 198.6L384 240C384 248.8 391.2 256 400 256L441.4 256C445.6 256 449.7 254.3 452.7 251.3L541.4 162.6z" />
+                                    </svg>
+                                </div>
+                                <div class="mdx-expect__description">
+                                    <h2>Made to measure</h2>
+                                    <p>
+                                        Experimental tooling isn't a niche solution - it's a must.
                                     </p>
                                 </div>
                             </li>
@@ -220,22 +262,19 @@
             <div class="md-content md-grid" data-md-component="content">
                 <div class="md-content__inner">
                     <header class="md-typeset">
-                        <h1 id="what-our-users-say"> What our users say <a href="#what-our-users-say" class="headerlink"
+                        <h1 id="what-my-repositories-say"> What my repositories say <a href="#what-my-repositories-say" class="headerlink"
                                 title="Permanent link"> ¶ </a> </h1>
                     </header>
                     <div class="mdx-users">
-                        <figure class="mdx-users__testimonial"> <img src="assets/images/users/john-maeda.jpg"
-                                alt="John Maeda" loading="lazy" width="200" height="200">
+                        <figure class="mdx-users__testimonial"> <img src="https://github.com/Zexyp/mist/raw/refs/heads/master/assets/logo.svg"
+                                alt="mist" loading="lazy" width="200" height="200">
                             <figcaption class="md-typeset">
-                                <h2>John Maeda</h2>
-                                <h3> Author / <a href="https://howtospeakmachine.com/">How To Speak Machine</a> </h3>
-                                <hr> <cite> The unwritten rule of the digital transformation handbook is that you'll
-                                    never have the resources to design experiences like Apple. But you can always close
-                                    most usability gaps with an awesome documentation experience. Expressed similarly in
-                                    <a href="https://mitpress.mit.edu/books/laws-simplicity">The Laws of Simplicity</a>,
-                                    "Learning makes things simpler". Material for MkDocs is the magical, extensible,
-                                    Open Source tool that makes sharing knowledge both easier and beautiful for both the
-                                    writers and learners. </cite>
+                                <h2>mist</h2>
+                                <h3>
+                                    <a href="https://github.com/Zexyp/mist">GitHub</a>
+                                </h3>
+                                <hr>
+                                <cite> Mist downloads and preserves playlists and music from multiple platforms, including metadata and artwork. </cite>
                             </figcaption>
                         </figure>
                         <figure class="mdx-users__testimonial"> <img
@@ -293,7 +332,7 @@
                         </div>
                     -->
                     </div>
-                    <div class="mdx-content__column shrinky-box">
+                    <div class="mdx-content__column shrinky-box p-1">
                         <header class="md-typeset">
                             <h1 id="keep-in-touch"> Keep in touch <a href="#keep-in-touch" class="headerlink"
                                     title="Permanent link"> ¶ </a> </h1>
@@ -313,12 +352,17 @@
                                     </a>
                                     <a href="https://extensions.blender.org/author/1824/" class="mdx-connect__link">
                                         <span class="twemoji">
-                                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Blender</title><path d="M12.51 13.214c.046-.8.438-1.506 1.03-2.006a3.424 3.424 0 0 1 2.212-.79c.85 0 1.631.3 2.211.79.592.5.983 1.206 1.028 2.005.045.823-.285 1.586-.865 2.153a3.389 3.389 0 0 1-2.374.938 3.393 3.393 0 0 1-2.376-.938c-.58-.567-.91-1.33-.865-2.152M7.35 14.831c.006.314.106.922.256 1.398a7.372 7.372 0 0 0 1.593 2.757 8.227 8.227 0 0 0 2.787 2.001 8.947 8.947 0 0 0 3.66.76 8.964 8.964 0 0 0 3.657-.772 8.285 8.285 0 0 0 2.785-2.01 7.428 7.428 0 0 0 1.592-2.762 6.964 6.964 0 0 0 .25-3.074 7.123 7.123 0 0 0-1.016-2.779 7.764 7.764 0 0 0-1.852-2.043h.002L13.566 2.55l-.02-.015c-.492-.378-1.319-.376-1.86.002-.547.382-.609 1.015-.123 1.415l-.001.001 3.126 2.543-9.53.01h-.013c-.788.001-1.545.518-1.695 1.172-.154.665.38 1.217 1.2 1.22V8.9l4.83-.01-8.62 6.617-.034.025c-.813.622-1.075 1.658-.563 2.313.52.667 1.625.668 2.447.004L7.414 14s-.069.52-.063.831zm12.09 1.741c-.97.988-2.326 1.548-3.795 1.55-1.47.004-2.827-.552-3.797-1.538a4.51 4.51 0 0 1-1.036-1.622 4.282 4.282 0 0 1 .282-3.519 4.702 4.702 0 0 1 1.153-1.371c.942-.768 2.141-1.183 3.396-1.185 1.256-.002 2.455.41 3.398 1.175.48.391.87.854 1.152 1.367a4.28 4.28 0 0 1 .522 1.706 4.236 4.236 0 0 1-.239 1.811 4.54 4.54 0 0 1-1.035 1.626"/></svg>
+                                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <title>Blender</title>
+                                                <path
+                                                    d="M12.51 13.214c.046-.8.438-1.506 1.03-2.006a3.424 3.424 0 0 1 2.212-.79c.85 0 1.631.3 2.211.79.592.5.983 1.206 1.028 2.005.045.823-.285 1.586-.865 2.153a3.389 3.389 0 0 1-2.374.938 3.393 3.393 0 0 1-2.376-.938c-.58-.567-.91-1.33-.865-2.152M7.35 14.831c.006.314.106.922.256 1.398a7.372 7.372 0 0 0 1.593 2.757 8.227 8.227 0 0 0 2.787 2.001 8.947 8.947 0 0 0 3.66.76 8.964 8.964 0 0 0 3.657-.772 8.285 8.285 0 0 0 2.785-2.01 7.428 7.428 0 0 0 1.592-2.762 6.964 6.964 0 0 0 .25-3.074 7.123 7.123 0 0 0-1.016-2.779 7.764 7.764 0 0 0-1.852-2.043h.002L13.566 2.55l-.02-.015c-.492-.378-1.319-.376-1.86.002-.547.382-.609 1.015-.123 1.415l-.001.001 3.126 2.543-9.53.01h-.013c-.788.001-1.545.518-1.695 1.172-.154.665.38 1.217 1.2 1.22V8.9l4.83-.01-8.62 6.617-.034.025c-.813.622-1.075 1.658-.563 2.313.52.667 1.625.668 2.447.004L7.414 14s-.069.52-.063.831zm12.09 1.741c-.97.988-2.326 1.548-3.795 1.55-1.47.004-2.827-.552-3.797-1.538a4.51 4.51 0 0 1-1.036-1.622 4.282 4.282 0 0 1 .282-3.519 4.702 4.702 0 0 1 1.153-1.371c.942-.768 2.141-1.183 3.396-1.185 1.256-.002 2.455.41 3.398 1.175.48.391.87.854 1.152 1.367a4.28 4.28 0 0 1 .522 1.706 4.236 4.236 0 0 1-.239 1.811 4.54 4.54 0 0 1-1.035 1.626" />
+                                            </svg>
                                         </span> On <strong>Blender Extensions</strong>
                                     </a>
                                     <a href="data:text/html,<h1>lol%20no<h1/>" class="mdx-connect__link">
                                         <span class="twemoji">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.-->
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 448 512"><!-- Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.-->
                                                 <path
                                                     d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8">
                                                 </path>
@@ -332,11 +376,24 @@
                 </div>
             </div>
         </section>
-        <div class="mdx-parallax__group">
-            
+        <div class="mdx-parallax__group" data-md-color-scheme="slate">
+            <footer class="md-footer">
+                <nav class="md-footer__inner md-grid" aria-label="Footer"> <a href="gallery/"
+                        class="md-footer__link md-footer__link--next" aria-label="Next: Gallery">
+                        <div class="md-footer__title"> <span class="md-footer__direction"> Next </span>
+                            <div class="md-ellipsis"> Gallery </div>
+                        </div>
+                        <div class="md-footer__button md-icon"> <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24">
+                                <path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path>
+                            </svg> </div>
+                    </a> </nav>
+                {% include "partials/footer.html" %}
+            </footer>
         </div>
     </div>
 </div>
+
 {% endblock %}
 
 <!-- Content -->

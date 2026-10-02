@@ -1,5 +1,1 @@
----
-template: gallery.html
----
-
 # Gallery

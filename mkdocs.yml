@@ -1,5 +1,6 @@
 site_name: Zexyp
 site_description: Technical Artist
+site_url: https://zexyp.github.io/portfolio/
 
 plugins:
   - blog:
@@ -8,6 +9,7 @@ plugins:
       blog_dir: gallery
       categories: true
       archive_toc: true
+      blog_toc: true
   #- search
 
 
@@ -43,17 +45,20 @@ theme:
     - navigation.top
     - navigation.sections
     - navigation.expand
+    - toc.integrate
 
 nav:
-  - Gallery: gallery/index.md
-  - Blog: blog/index.md
+  - Gallery:
+      - gallery/index.md
+  - Blog:
+      - blog/index.md
 
 extra_css:
   - stylesheets/extra.css
-  - stylesheets/mdx.css
   - stylesheets/shrinky.css
   - stylesheets/glow.css
   - stylesheets/bs.css
+  - stylesheets/md.css
 
 extra:
   social:
@@ -61,3 +66,7 @@ extra:
       link: https://github.com/Zexyp/
     - icon: simple/blender
       link: https://extensions.blender.org/author/1824/
+
+markdown_extensions:
+  - attr_list
+  - md_in_html

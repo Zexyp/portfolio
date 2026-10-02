@@ -116,3 +116,7 @@
   padding-left: .6rem;
   padding-right: .6rem;
 }
+
+[dir="ltr"] .md-nav--integrated > .md-nav__list > .md-nav__item--active .md-nav--secondary {
+  border-left: .05rem solid var(--md-default-fg-color)
+}

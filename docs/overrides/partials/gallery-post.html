@@ -1,4 +1,4 @@
-<article class="md-post gallery-item shrinky-box">
+<article class="md-post gallery-item p-1 shrinky-box">
   <header class="md-post__header">
 
     <!-- Post authors -->
@@ -78,7 +78,7 @@
   <div class="md-post__content md-typeset">
     <div class="gallery-item__image">
       {% if post.meta.image %}
-        <img alt="Title image" src="{{ post.file.src_uri.strip("/").rsplit("/", 2)[1] ~ "/" ~ post.meta.image }}"/>
+        <img alt="Title image" src="{{  config.site_url ~ "gallery/" ~ post.file.src_uri.strip("/").rsplit("/", 2)[1] ~ "/" ~ post.meta.image }}"/>
       {% else %}
         <div alt="Placeholder image" class="gallery-item__image-placeholder"/>
       {% endif %}

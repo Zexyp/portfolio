@@ -8,7 +8,6 @@
     --shrinky-color: currentcolor;
     --shrinky-background-color: var(--md-default-bg-color);
     --shrinky-outline-factor: .75;
-    padding: .5em;
     display: inline-block;
     position: relative;
     border: var(--shrinky-border) solid var(--shrinky-color);

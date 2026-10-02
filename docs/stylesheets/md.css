@@ -1,0 +1,8 @@
+.gal-mrsk {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gal-mrsk img  {
+    align-self: center;
+}
