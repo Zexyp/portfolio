@@ -1,22 +1,22 @@
 .shrinky-box > * {
-    z-index: 2;
+    z-index: 1;
     position: relative;
 }
 .shrinky-box {
-    --shrinky-border: 2px;
-    --shrinky-length: 1em;
+    --shrinky-border: 1px;
+    --shrinky-length: 2em;
     --shrinky-color: currentcolor;
-    --shrinky-background-color: var(--bs-dark);
+    --shrinky-background-color: var(--md-default-bg-color);
     --shrinky-outline-factor: .75;
+    padding: .5em;
     display: inline-block;
     position: relative;
     border: var(--shrinky-border) solid var(--shrinky-color);
-    z-index: 0;
     transition: all 0.3s ease;
     opacity: 1;
 }
-.shrinky-box:hover {
-    z-index: 10;
+.shrinky-box:hover,
+.shrinky-box:focus-within {
 }
 .shrinky-box:before, .shrinky-box:after {
     content: "";
@@ -32,25 +32,25 @@
 }
 .shrinky-box:before {
     /* +1 just to be safe */
-    width: calc(100% + var(--shrinky-border) * 2 + 2px);
-    height: calc(100% + var(--shrinky-border) * 2);
-    z-index: 1;
+    width: calc(100% + var(--shrinky-border) * 2 + 1pt);
+    height: calc(100% + var(--shrinky-border) * 2 + 1pt);
     transition: height 1s ease, opacity 0.8s ease;
 }
 .shrinky-box:after {
     /* +1 just to be safe */
-    height: calc(100% + var(--shrinky-border) * 2 + 2px);
-    width: calc(100% + var(--shrinky-border) * 2);
+    height: calc(100% + var(--shrinky-border) * 2 + 1pt);
+    width: calc(100% + var(--shrinky-border) * 2 + 1pt);
 
-    z-index: 1;
     transition: width 1s ease, opacity 0.8s ease;
 }
-.shrinky-box:hover:before, .shrinky-box:focus:before {
+.shrinky-box:hover:before, .shrinky-box:focus:before,
+.shrinky-box:focus-within:before {
     transition: height 0.2s ease, opacity 0.3s ease;
     height: calc(100% - var(--shrinky-length));
     opacity: var(--shrinky-outline-factor);
 }
-.shrinky-box:hover:after, .shrinky-box:focus:after {
+.shrinky-box:hover:after, .shrinky-box:focus:after,
+.shrinky-box:focus-within:after {
     transition: width 0.2s ease, opacity 0.3s ease;
     width: calc(100% - var(--shrinky-length));
     opacity: var(--shrinky-outline-factor);
@@ -64,5 +64,4 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: all 0.5s ease;
-    z-index: 2;
 }

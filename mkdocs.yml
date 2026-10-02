@@ -6,6 +6,10 @@ plugins:
       blog_dir: blog
   - blog:
       blog_dir: gallery
+      categories: true
+      archive_toc: true
+  #- search
+
 
 theme:
   favicon: assets/images/favicon.png
@@ -37,15 +41,19 @@ theme:
     - navigation.tabs
     - navigation.path
     - navigation.top
+    - navigation.sections
+    - navigation.expand
 
 nav:
-  - Home: index.md
   - Gallery: gallery/index.md
   - Blog: blog/index.md
 
 extra_css:
   - stylesheets/extra.css
   - stylesheets/mdx.css
+  - stylesheets/shrinky.css
+  - stylesheets/glow.css
+  - stylesheets/bs.css
 
 extra:
   social:

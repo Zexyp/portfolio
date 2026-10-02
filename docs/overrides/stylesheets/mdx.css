@@ -99,7 +99,7 @@
   object-position: var(--md-image-position, 50%);
   position: absolute;
   width: 100%;
-  z-index: -1
+  z-index: -1;
 }
 
 .mdx-parallax__blend {
@@ -231,7 +231,7 @@
 }
 
 .mdx-hero__scrollwrap {
-  height: calc(100vh - 20em);
+  height: calc(100vh - 16em);
   margin-bottom: -100vh;
   position: absolute;
   display: block;
