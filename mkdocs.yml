@@ -66,6 +66,8 @@ extra:
       link: https://github.com/Zexyp/
     - icon: simple/blender
       link: https://extensions.blender.org/author/1824/
+    - icon: simple/youtube
+      link: https://www.youtube.com/@zexyp44
 
 markdown_extensions:
   - attr_list
