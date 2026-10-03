@@ -2,6 +2,8 @@
 date: 2021-10-13
 title: Vality
 image: assets/vality.png
+categories:
+    - abstract
 ---
 
 ![main](assets/vality.png)

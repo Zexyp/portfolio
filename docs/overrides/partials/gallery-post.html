@@ -16,7 +16,7 @@
     <div class="md-post__meta md-meta">
       <div class="md-post__title">
         <a href="{{ post.url | url }}">
-          <h2>{{ post.title }}</h2>
+          <h2 id="{{ post.url.strip("/").rsplit("/", 1)[1] }}">{{ post.title }}</h2>
         </a>
       </div>
 
@@ -29,7 +29,19 @@
           </time>
           {#- Collapse whitespace -#}
         </li>
-        
+
+        <!-- Post readtime -->
+        {% if post.config.readtime %}
+          {% set time = post.config.readtime %}
+          <li class="md-meta__item">
+            {% if time == 1 %}
+              {{ lang.t("readtime.one") }}
+            {% else %}
+              {{ lang.t("readtime.other") | replace("#", time) }}
+            {% endif %}
+          </li>
+        {% endif %}
+
         <!-- Post categories -->
         {% if post.categories %}
           <li class="md-meta__item">
@@ -43,18 +55,6 @@
               </a>
               {%- if loop.revindex > 1 %}, {% endif -%}
             {% endfor -%}
-          </li>
-        {% endif %}
-
-        <!-- Post readtime -->
-        {% if post.config.readtime %}
-          {% set time = post.config.readtime %}
-          <li class="md-meta__item">
-            {% if time == 1 %}
-              {{ lang.t("readtime.one") }}
-            {% else %}
-              {{ lang.t("readtime.other") | replace("#", time) }}
-            {% endif %}
           </li>
         {% endif %}
 

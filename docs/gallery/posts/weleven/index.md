@@ -19,8 +19,8 @@ The material clearly has some subsurface scattering going on. At the end getting
 Work on the shape wasn't easy. The cloth needs to look soft but not too much crumbly.
 
 <div class="gal-mrsk">
-<img src="../../../../weleven/assets/w2.png" width="50%">
-<img src="../../../../weleven/assets/w2tall.png" width="50%">
+<img src="../../../../weleven/assets/w2.png" width="50%"/>
+<img src="../../../../weleven/assets/w2tall.png" width="50%"/>
 </div>
 
 ## Simulation
@@ -28,5 +28,5 @@ Here you can see the simulation itself. I was constantly modifying, adding, and 
 This was maybe like third entire attempt.
 
 <video width="50%" controls="true" allowfullscreen="true" poster="">
-  <source src="../../../../weleven/assets/sim.mp4" type="video/mp4">
+  <source src="../../../../weleven/assets/sim.mp4" type="video/mp4"/>
 </video>
