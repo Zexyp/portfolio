@@ -1,0 +1,76 @@
+.shrinky-box > * {
+    z-index: 1;
+    position: relative;
+}
+.shrinky-box {
+    --shrinky-border-width: 2px;
+    --shrinky-length: 2em;
+    --shrinky-color: currentcolor;
+    --shrinky-background-color: var(--md-default-bg-color);
+    --shrinky-outline-factor: .7;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    border: var(--shrinky-border-width) solid var(--shrinky-color);
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+.shrinky-box:before, .shrinky-box:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: var(--shrinky-background-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    opacity: 1;
+}
+.shrinky-box:before {
+    /* +1 just to be safe */
+    width: calc(100% + var(--shrinky-border-width) * 2 + 1px);
+    height: calc(100% + var(--shrinky-border-width) * 2 + 1px);
+    transition: height 1s ease, opacity 0.8s ease;
+}
+.shrinky-box:after {
+    /* +1 just to be safe */
+    height: calc(100% + var(--shrinky-border-width) * 2 + 1px);
+    width: calc(100% + var(--shrinky-border-width) * 2 + 1px);
+
+    transition: width 1s ease, opacity 0.8s ease;
+}
+.shrinky-box:hover:before, .shrinky-box:focus:before,
+.shrinky-box:focus-within:before {
+    transition: height 0.2s ease, opacity 0.3s ease;
+    height: calc(100% - var(--shrinky-length));
+    opacity: var(--shrinky-outline-factor);
+}
+.shrinky-box:hover:after, .shrinky-box:focus:after,
+.shrinky-box:focus-within:after {
+    transition: width 0.2s ease, opacity 0.3s ease;
+    width: calc(100% - var(--shrinky-length));
+    opacity: var(--shrinky-outline-factor);
+}
+.shrinky-box__ready:before,
+.shrinky-box__ready:after {
+    opacity: var(--shrinky-outline-factor);
+}
+
+.shrinky-box__vertical:after {
+    display: none;
+}
+.shrinky-box__horizontal:before {
+    display: none;
+}
+
+.shrinky-box__image {
+    fill: var(--shrinky-background-color);
+    width: 60%;
+    will-change: width;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.5s ease;
+}

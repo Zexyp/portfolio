@@ -1,0 +1,102 @@
+<article class="md-post gallery-item p-1 shrinky-box">
+  <header class="md-post__header">
+
+    <!-- Post authors -->
+    {% if post.authors %}
+      <nav class="md-post__authors md-typeset">
+        {% for author in post.authors %}
+          <span class="md-author">
+            <img src="{{ author.avatar | url }}" alt="{{ author.name }}" />
+          </span>
+        {% endfor %}
+      </nav>
+    {% endif %}
+
+    <!-- Post metadata -->
+    <div class="md-post__meta md-meta">
+      <div class="md-post__title">
+        <a href="{{ post.url | url }}">
+          <h2 id="{{ post.url.strip("/").rsplit("/", 1)[1] }}">{{ post.title }}</h2>
+        </a>
+      </div>
+
+      <ul class="md-meta__list">
+
+        <!-- Post date -->
+        <li class="md-meta__item">
+          <time datetime="{{ post.config.date.created }}">
+            {{- post.config.date.created | date -}}
+          </time>
+          {#- Collapse whitespace -#}
+        </li>
+
+        <!-- Post readtime -->
+        {% if post.config.readtime %}
+          {% set time = post.config.readtime %}
+          <li class="md-meta__item">
+            {% if time == 1 %}
+              {{ lang.t("readtime.one") }}
+            {% else %}
+              {{ lang.t("readtime.other") | replace("#", time) }}
+            {% endif %}
+          </li>
+        {% endif %}
+
+        <!-- Post categories -->
+        {% if post.categories %}
+          <li class="md-meta__item">
+            {{ lang.t("blog.categories.in") }}
+            {% for category in post.categories %}
+              <a
+                href="{{ category.url | url }}"
+                class="md-meta__link"
+              >
+                {{- category.title -}}
+              </a>
+              {%- if loop.revindex > 1 %}, {% endif -%}
+            {% endfor -%}
+          </li>
+        {% endif %}
+
+        <!-- Pin marker -->
+        {% if post.config.pin %}
+          <span class="md-pin"></span>
+        {% endif %}
+      </ul>
+
+      <!-- Draft marker -->
+      {% if post.config.draft %}
+        <span class="md-draft">
+          {{ lang.t("blog.draft") }}
+        </span>
+      {% endif %}
+    </div>
+  </header>
+
+  <!-- Post content -->
+  <a href="{{ post.url | url }}">
+  <div class="md-post__content md-typeset">
+    <div class="gallery-item__image">
+      {% if post.meta.image %}
+        <img alt="Title image" src="{{  config.site_url ~ "gallery/" ~ post.file.src_uri.strip("/").rsplit("/", 2)[1] ~ "/" ~ post.meta.image }}"/>
+      {% else %}
+        <div alt="Placeholder image" class="gallery-item__image-placeholder"/>
+      {% endif %}
+      {% if post.meta.description %}
+        <div class="gallery-item__description md-meta">
+          {{ post.meta.description }}
+        </div>
+      {% endif %}
+    </div>
+
+    <!-- Continue reading link - tf -->
+    {% if post.more %}
+      <nav class="md-post__action">
+        <a href="{{ post.url | url }}">
+          {{ lang.t("blog.continue") }}
+        </a>
+      </nav>
+    {% endif %}
+  </div>
+  </a>
+</article>
