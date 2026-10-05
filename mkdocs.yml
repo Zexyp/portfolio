@@ -10,6 +10,7 @@ plugins:
       categories: true
       archive_toc: true
       blog_toc: true
+      pagination: false
   #- search
 
 

@@ -19,7 +19,9 @@
 :root {
   --md-text-font: "Geist";
   --md-code-font: "Geist Mono";
-  --zx-logo-height: 8em;
+  --zx-logo-height: 4rem;
+  --zx-border-width: 1px;
+  --zx-header-height: calc(var(--zx-logo-height) + var(--zx-border-width))
 }
 
 
@@ -35,7 +37,7 @@
 
   --md-footer-bg-color--dark: #000;
 
-  --zx-border: 1px solid #333333;
+  --zx-border: var(--zx-border-width) solid #333333;
 
   .md-tabs {
     box-shadow: 0 0 16px #0006;
@@ -62,7 +64,7 @@
 
   --md-code-bg-color: #212223;
 
-  --zx-border: 1px solid #222222;
+  --zx-border: var(--zx-border-width) solid #222222;
 
   .md-tabs {
     border-bottom: var(--zx-border);

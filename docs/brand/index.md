@@ -1,7 +1,5 @@
 # Brand Guidelines
 
-helpoop
-
 ## Variants
 ### Full
 #### Square
