@@ -20,6 +20,33 @@
         </a>
       </div>
 
+      <!-- Post content -->
+      <a href="{{ post.url | url }}">
+        <div class="md-post__content md-typeset">
+          <div class="gallery-item__image">
+            {% if post.meta.image %}
+              <img alt="Title image" src="{{  config.site_url ~ "gallery/" ~ post.file.src_uri.strip("/").rsplit("/", 2)[1] ~ "/" ~ post.meta.image }}"/>
+            {% else %}
+              <div alt="Placeholder image" class="gallery-item__image-placeholder"/>
+            {% endif %}
+            {% if post.meta.description %}
+              <div class="gallery-item__description md-meta">
+                {{ post.meta.description }}
+              </div>
+            {% endif %}
+          </div>
+
+          <!-- Continue reading link - tf -->
+          {% if post.more %}
+            <nav class="md-post__action">
+              <a href="{{ post.url | url }}">
+                {{ lang.t("blog.continue") }}
+              </a>
+            </nav>
+          {% endif %}
+        </div>
+      </a>
+
       <ul class="md-meta__list">
 
         <!-- Post date -->
@@ -72,31 +99,4 @@
       {% endif %}
     </div>
   </header>
-
-  <!-- Post content -->
-  <a href="{{ post.url | url }}">
-  <div class="md-post__content md-typeset">
-    <div class="gallery-item__image">
-      {% if post.meta.image %}
-        <img alt="Title image" src="{{  config.site_url ~ "gallery/" ~ post.file.src_uri.strip("/").rsplit("/", 2)[1] ~ "/" ~ post.meta.image }}"/>
-      {% else %}
-        <div alt="Placeholder image" class="gallery-item__image-placeholder"/>
-      {% endif %}
-      {% if post.meta.description %}
-        <div class="gallery-item__description md-meta">
-          {{ post.meta.description }}
-        </div>
-      {% endif %}
-    </div>
-
-    <!-- Continue reading link - tf -->
-    {% if post.more %}
-      <nav class="md-post__action">
-        <a href="{{ post.url | url }}">
-          {{ lang.t("blog.continue") }}
-        </a>
-      </nav>
-    {% endif %}
-  </div>
-  </a>
 </article>

@@ -1,5 +1,5 @@
 ---
-date: 1000-01-01
+date: 2025-06-01
 title: Wall Rails
 image: assets/32samp.png
 categories:

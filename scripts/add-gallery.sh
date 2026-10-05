@@ -8,10 +8,11 @@ fi
 
 mkdir "docs/gallery/posts/$1"
 mkdir "docs/gallery/posts/$1/assets"
+#$(date '+%Y-%m-%d')
 
 cat > "docs/gallery/posts/$1/index.md" <<EOF
 ---
-date: $(date '+%Y-%m-%d')
+date: 1000-01-01
 title: $1
 ---
 EOF

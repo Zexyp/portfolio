@@ -1,5 +1,5 @@
 ---
-date: 1000-01-01
+date: 2021-12-31
 title: Trnynr
 image: assets/final glow.png
 ---

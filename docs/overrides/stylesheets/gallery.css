@@ -87,3 +87,7 @@
 .md-meta__list {
     padding-bottom: .3em;
 }
+
+.md-post__header .md-meta__list {
+    margin-top: .5em;
+}
