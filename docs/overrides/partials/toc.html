@@ -27,7 +27,13 @@
 {% endif %}
 
 <!-- Table of contents -->
+{# funny fix #}
+{% if page.meta.template == "blog.html" %}
 <nav class="md-nav md-nav--secondary shrinky-box shrinky-box__ready shrinky-box__vertical" aria-label="{{ title | e }}">
+{% else %}
+<nav class="md-nav md-nav--secondary" aria-label="{{ title | e }}">
+{% endif %}
+
   {% set toc = page.toc %}
 
   <!--
