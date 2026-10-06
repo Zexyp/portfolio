@@ -5,3 +5,6 @@ image: assets/is that a piss but red.png
 categories:
     - abstract
 ---
+
+## Compositing
+TODO

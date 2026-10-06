@@ -8,3 +8,14 @@ categories:
 ---
 
 ![](assets/comp.png)
+
+## Faking it
+TODO
+
+![](assets/ortho.png)
+
+## Simulation
+
+<video width="50%" controls="true" allowfullscreen="true" poster="">
+  <source src="../../../../dareha/assets/sim.mp4" type="video/mp4"/>
+</video>

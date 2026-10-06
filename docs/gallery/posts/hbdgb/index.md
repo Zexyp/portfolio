@@ -7,3 +7,6 @@ image: assets/full lightlypolished.png
 ---
 
 ![](assets/full lightlypolished.png)
+
+## Geometry Nodes Tech
+TODO

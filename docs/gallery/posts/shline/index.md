@@ -5,3 +5,7 @@ date:
 title: Shline
 image: assets/keep working and reworking.png
 ---
+
+![](assets/keep working and reworking.png)
+
+TODO

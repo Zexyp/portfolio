@@ -16,7 +16,6 @@ As you might have guessed this work is inspired by Windows 11 wallpaper.
 
 There was this temptation to unveil the softness yet light structure of this concept.
 The material clearly has some subsurface scattering going on. At the end getting to this result was more of a compositing work.
-Work on the shape wasn't easy. The cloth needs to look soft but not too much crumbly.
 
 <div class="gal-mrsk">
 <img src="../../../../weleven/assets/w2.png" width="50%"/>
@@ -26,6 +25,8 @@ Work on the shape wasn't easy. The cloth needs to look soft but not too much cru
 ## Simulation
 Here you can see the simulation itself. I was constantly modifying, adding, and removing forces until I got a usable result.
 This was maybe like third entire attempt.
+
+The cloth needed to look soft ant not too crumbly. Finally a good scenario to play with self collision distacnce.
 
 <video width="50%" controls="true" allowfullscreen="true" poster="">
   <source src="../../../../weleven/assets/sim.mp4" type="video/mp4"/>

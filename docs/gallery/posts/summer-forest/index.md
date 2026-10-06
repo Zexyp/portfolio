@@ -5,3 +5,7 @@ image: assets/full less dispersion dumbtard graded.png
 categories:
     - realistic
 ---
+
+![](assets/full less dispersion dumbtard graded.png)
+
+TODO
