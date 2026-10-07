@@ -16,6 +16,6 @@ TODO
 
 ## Simulation
 
-<video width="50%" controls="true" allowfullscreen="true" poster="">
+<video controls="true" allowfullscreen="true" poster="">
   <source src="../../../../dareha/assets/sim.mp4" type="video/mp4"/>
 </video>

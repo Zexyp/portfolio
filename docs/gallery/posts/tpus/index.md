@@ -6,5 +6,15 @@ categories:
     - abstract
 ---
 
+![](assets/is that a piss but red.png)
+
 ## Compositing
-TODO
+As a fan of cold colors, I prefer the composited result.
+My favorite trick is to bathe the whole image in blue - a simple additive blend will do the job. I never expected such a simple trick to make such a difference...
+
+Here’s the image before compositing.
+
+![](assets/is that a piss.png)
+
+## Earlier experiments
+![](assets/exp-cycles.png){width=50%}

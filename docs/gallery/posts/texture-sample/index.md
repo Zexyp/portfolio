@@ -6,4 +6,13 @@ categories:
     - abstract
 ---
 
-TODO
+![](assets/field.png)
+
+This work reminded me of how important subsurface scattering materials can be.
+
+## Other experiments
+
+<div class="gal-mrsk">
+<img src="../../../../texture-sample/assets/ortho.png" width="50%"/>
+<img src="../../../../texture-sample/assets/that boinky.png" width="50%"/>
+</div>
