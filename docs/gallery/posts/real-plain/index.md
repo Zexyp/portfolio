@@ -2,6 +2,7 @@
 date: 2021-02-23
 title: Real Plain
 image: assets/gjucossdnss.png
+description: Babe it's 4am, you should go sleep
 ---
 
 ![](assets/gjucossdnss.png)

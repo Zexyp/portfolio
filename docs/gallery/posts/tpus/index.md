@@ -4,6 +4,7 @@ title: Fire Rtee
 image: assets/is that a piss but red.png
 categories:
     - abstract
+description: Cold feeling fire
 ---
 
 ![](assets/is that a piss but red.png)

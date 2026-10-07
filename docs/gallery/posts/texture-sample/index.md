@@ -4,6 +4,7 @@ title: Texture Sampling
 image: assets/field.png
 categories:
     - abstract
+description: Pixels to columns
 ---
 
 ![](assets/field.png)

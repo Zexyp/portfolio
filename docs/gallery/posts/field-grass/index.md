@@ -5,11 +5,12 @@ title: Field Grass
 image: assets/color.png
 categories:
     - realistic
+description: We keep trolling to a minimum
 ---
 
 ![](assets/color.png)
 
-## Minimal trolling
+## Minimal Trolling
 What originally started as a single image expanded into a three piece work for a client.
 
 ![](assets/pure.png)

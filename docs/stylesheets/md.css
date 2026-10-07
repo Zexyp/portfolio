@@ -4,6 +4,15 @@
     justify-content: center;
 }
 
-.gal-mrsk img  {
+.gal-mrsk img,
+.gal-mrsk video  {
     align-self: center;
+}
+
+.gal-scuk {
+    display: flex;
+}
+
+.gal-scuk img {
+    width: 100%;
 }

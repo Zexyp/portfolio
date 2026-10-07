@@ -15,8 +15,8 @@ plugins:
 
 
 theme:
-  favicon: assets/images/favicon.png
-  logo: assets/images/logo.png
+  favicon: assets/scalable/icon.svg
+  logo: assets/scalable/logo.svg
   name: material
   custom_dir: docs/overrides
   palette:

@@ -20,6 +20,13 @@
         </a>
       </div>
 
+      <!-- Draft marker -->
+      {% if post.config.draft %}
+        <span class="md-draft">
+          {{ lang.t("blog.draft") }}
+        </span>
+      {% endif %}
+
       <!-- Post content -->
       <a href="{{ post.url | url }}">
         <div class="md-post__content md-typeset">
@@ -90,13 +97,6 @@
           <span class="md-pin"></span>
         {% endif %}
       </ul>
-
-      <!-- Draft marker -->
-      {% if post.config.draft %}
-        <span class="md-draft">
-          {{ lang.t("blog.draft") }}
-        </span>
-      {% endif %}
     </div>
   </header>
 </article>

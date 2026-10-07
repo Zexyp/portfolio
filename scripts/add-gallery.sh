@@ -13,6 +13,7 @@ mkdir "docs/gallery/posts/$1/assets"
 cat > "docs/gallery/posts/$1/index.md" <<EOF
 ---
 date: 1000-01-01
-title: $1
+title: "$1"
+draft: true
 ---
 EOF
