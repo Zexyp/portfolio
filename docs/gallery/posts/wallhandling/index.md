@@ -6,10 +6,19 @@ categories:
     - realistic
 description: All paths have a destination, sometimes it's a brick wall
 codename: asd
-draft: true
 codename: wallhandling
 ---
 
 ![](assets/32samp.png)
 
-TODO
+## Planes
+Some elements are just textured planes.
+Backround hills are some generated AI slop with usable transparency.
+Crow on the working lamp is also just a plane.
+
+![](assets/full.png)
+
+## Experiments
+I like this almost monochrome look since it uses both greens and grays.
+
+![](assets/mby final.png)

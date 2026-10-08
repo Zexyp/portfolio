@@ -20,15 +20,15 @@ Smaller spikes on the body are basically a gamble with the noise seed.
 
 <div class="gal-scuk">
 <video controls="true" allowfullscreen="true" poster="">
-  <source src="../../../../hbdgb/assets/blocker.mp4" type="video/mp4"/>
+  <source src="../../../../hbdgb/assets/blocker.mp4" type="video/mp4">
 </video>
 
 <video controls="true" allowfullscreen="true" poster="">
-  <source src="../../../../hbdgb/assets/large.mp4" type="video/mp4"/>
+  <source src="../../../../hbdgb/assets/large.mp4" type="video/mp4">
 </video>
 
 <video controls="true" allowfullscreen="true" poster="">
-  <source src="../../../../hbdgb/assets/small.mp4" type="video/mp4"/>
+  <source src="../../../../hbdgb/assets/small.mp4" type="video/mp4">
 </video>
 </div>
 

@@ -25,14 +25,14 @@ The blood material was made a bit glowy to make it pop a bit more. Shading alway
 Rigging individual feathers is really painful. However, the result is worth it. Some filler feathers were made to stretch.
 
 <video controls="true" allowfullscreen="true" poster="">
-  <source src="../../../../shline/assets/wing.mp4" type="video/mp4"/>
+  <source src="../../../../shline/assets/wing.mp4" type="video/mp4">
 </video>
 
 ### Cloth
 The cloth does look like some kind of table cloth and that was the goal. Nothing fancy, just something to put over that hideous sqaure ass.
 
 <video controls="true" allowfullscreen="true" poster="">
-  <source src="../../../../shline/assets/cloth.mp4" type="video/mp4"/>
+  <source src="../../../../shline/assets/cloth.mp4" type="video/mp4">
 </video>
 
 ## Particles

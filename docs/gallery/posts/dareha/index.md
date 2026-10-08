@@ -27,5 +27,5 @@ Only some elements have colliders, to keep my computer from attempting an orbita
 Still, it gives it the dynamic look and feel.
 
 <video controls="true" allowfullscreen="true" poster="">
-  <source src="../../../../dareha/assets/sim.mp4" type="video/mp4"/>
+  <source src="../../../../dareha/assets/sim.mp4" type="video/mp4">
 </video>

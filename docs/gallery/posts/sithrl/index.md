@@ -15,7 +15,7 @@ I still haven't decided whether the trail is blood or oil.
 <div class="gal-mrsk">
 <img src="../../../../sithrl/assets/kitbash.png" width="25%">
 <video controls="true" autoplay="true" muted="true" loop="true" allowfullscreen="true" poster="" width="75%">
-  <source src="../../../../sithrl/assets/lazyrecolor.mp4" type="video/mp4"/>
+  <source src="../../../../sithrl/assets/lazyrecolor.mp4" type="video/mp4">
 </video>
 </div>
 
@@ -23,5 +23,5 @@ I still haven't decided whether the trail is blood or oil.
 Take some rubble, stretch it af, ta-da! spikes!
 
 <video controls="true" autoplay="true" muted="true" loop="true" allowfullscreen="true" poster="">
-  <source src="../../../../sithrl/assets/spikes.mp4" type="video/mp4"/>
+  <source src="../../../../sithrl/assets/spikes.mp4" type="video/mp4">
 </video>

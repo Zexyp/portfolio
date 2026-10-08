@@ -22,7 +22,7 @@ All the final color was achieved only with lights. You can ponder the cluster fu
 Non dynamic hair simulation is always fun.
 
 <video controls="true" allowfullscreen="true" poster="">
-  <source src="../../../../mohr/assets/viewport.mp4" type="video/mp4"/>
+  <source src="../../../../mohr/assets/viewport.mp4" type="video/mp4">
 </video>
 
 The turbulence noise always achieves nice curls.

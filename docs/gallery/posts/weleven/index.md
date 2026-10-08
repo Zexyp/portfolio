@@ -19,8 +19,8 @@ I wanted to reveal the concept’s soft yet lightweight structure.
 The material clearly has some subsurface scattering, but achieving the final look came down mostly to compositing.
 
 <div class="gal-mrsk">
-<img src="../../../../weleven/assets/w2.png" width="50%"/>
-<img src="../../../../weleven/assets/w2tall.png" width="50%"/>
+<img src="../../../../weleven/assets/w2.png" width="50%">
+<img src="../../../../weleven/assets/w2tall.png" width="50%">
 </div>
 
 ## Simulation
@@ -30,5 +30,5 @@ I kept adjusting, adding, and removing forces until I got a usable result. This 
 I wanted the cloth to look soft without becoming too crumpled. Finally a good opportunity to play with self collision distacnce.
 
 <video controls="true" allowfullscreen="true" poster="">
-  <source src="../../../../weleven/assets/sim.mp4" type="video/mp4"/>
+  <source src="../../../../weleven/assets/sim.mp4" type="video/mp4">
 </video>
