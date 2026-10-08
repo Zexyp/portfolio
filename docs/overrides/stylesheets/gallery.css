@@ -31,8 +31,8 @@
 .gallery-item__image-placeholder {
     /*background-image: url(../../assets/missing.svg);*/
     background-image:
-        linear-gradient(to right, currentcolor 1px, transparent 1px),
-        linear-gradient(to bottom, currentcolor 1px, transparent 1px);
+        linear-gradient(to right, currentcolor 0px, currentcolor 1px, transparent 1px),
+        linear-gradient(to bottom, currentcolor 0px, currentcolor 1px, transparent 1px);
     background-size: 48px 48px;
     background-repeat: repeat;
     width: 100%;

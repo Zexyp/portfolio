@@ -9,7 +9,7 @@ image: assets/overview.png
 
 My school held a notebook-cover design competition in collaboration with [Papírny Brno](https://www.papirnybrno.cz/). I submitted two designs, and both were selected: one featuring geometric shapes and the other with hot air balloons.
 
-As a digital artist, I was curious (and a little nervous) about how my RGB colors would look in CMYK print. To play it safe, I chose a simple palette of light colors. At the end the colors turned out beautifully! My favourite is the cyan and magenta one on gray bacground.
+As a digital artist, I was curious (and a little nervous) about how my RGB colors would look in CMYK print. To play it safe, I chose a simple palette of light colors. At the end the colors turned out amazing! My favourite is the cyan and magenta shapes on gray bacground.
 
 ## Shapes
 <div class="gal-mrsk">
@@ -21,7 +21,7 @@ As a digital artist, I was curious (and a little nervous) about how my RGB color
 <img src="../../../../notebook/assets/bile pozadi varianta 3.png" width="50%"/>
 </div>
 
-## Hot Air Balloon
+## Hot air balloons
 <div class="gal-mrsk">
 <img src="../../../../notebook/assets/mv1.png" width="33%"/>
 <img src="../../../../notebook/assets/ov1.png" width="33%"/>
@@ -31,7 +31,7 @@ As a digital artist, I was curious (and a little nervous) about how my RGB color
 <img src="../../../../notebook/assets/ov3.png" width="33%"/>
 </div>
 
-Only orange version got dropped. At the client's request, it was replaced with pink. One of the most confusing instruction as a starting beginning artist was something along the lines of: “Could you make the background pink without the pink balloon getting lost?”
+Only orange version got dropped. At the client's request, it was replaced with pink. One of the most confusing instruction for a starting artist was something along the lines of: “Could you make the background pink without the pink balloon getting lost?”
 
 <div class="gal-mrsk">
 <img src="../../../../notebook/assets/rv1.png" width="33%"/>

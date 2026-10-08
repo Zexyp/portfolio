@@ -12,7 +12,7 @@ I left my friend for a few minutes in scult mode... Let’s just say the cube wa
 
 ![](assets/viewport.png)
 
-The topology is absolute mess, but it works really well with this material
+The topology is absolute mess, but it works really well with this material.
 
 The blur is mostly a compositing thing. If anyone needs a phone wallpaper, here’s a taller version.
 

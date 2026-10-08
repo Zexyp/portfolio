@@ -12,7 +12,7 @@ codename: dareha
 
 You don't need motion blur when you already make it rain streaks.
 
-## Other Views
+## Other views
 ***... [forgets to turn off depth of field]... damn***
 
 ![](assets/ortho.png)

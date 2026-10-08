@@ -18,7 +18,7 @@
 
 For full square version use square.
 
-## Safe Areas
+## Safe areas
 #### Square
 ![alt text](assets/safe-areas-full.png)
 

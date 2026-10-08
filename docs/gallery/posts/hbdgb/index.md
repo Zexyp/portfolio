@@ -12,7 +12,7 @@ codename: hbdgb
 
 A heated rebar was insterted to drive the point home that the character is pinned against the wall.
 
-## Geometry Nodes Tech
+## Geometry Nodes tech
 Funny business was making sure not to poke through the body.
 A simple blocker was intruduced that roughly matches its shape.
 Spikes are emitted from an empty and checked against the blocker.
@@ -34,7 +34,7 @@ Smaller spikes on the body are basically a gamble with the noise seed.
 
 ## Materials
 Adding edge highlights really made the spikes pop and elevated their sharpness.
-I do like the simple fake marble look that makes the spikes colder upon ponder.
+I do like the simple fake marble that makes the spikes look colder upon ponder.
 
 <figure>
 	<p class="img-compare">
@@ -51,11 +51,11 @@ Simple prism shards made some good glinting elements that really added to the sc
 
 ![](assets/particle-hole.png){width=75%}
 
-I did punch a hole through in order to male the view a clearer.
+I did punch a hole through in order to make room for a clearer view.
 
-## Early Concept
+## Early concepts
 
 ![](assets/first output.png){width=66%}
 
 ## Inspiration
-I got my inpiration from some of the works of [Jakub Uhlík](https://www.jakubuhlik.com/).
+I got my inpiration from some of the works from [Jakub Uhlík](https://www.jakubuhlik.com/).

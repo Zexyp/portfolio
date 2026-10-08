@@ -9,7 +9,7 @@ codename: mohr
 
 ![](assets/scary boi balanced.png)
 
-## Shaping Spaghetti
+## Shaping spaghetti
 To give the strads a more organic look, I first converted the particles to meshes and applied a Skin modifier in order to give them some thickness.
 Then I used a Decimate modifier to break up the amount of topology followed by Subdivision Surface modifier to smooth the result.
 
@@ -18,7 +18,7 @@ All the final color was achieved only with lights. You can ponder the cluster fu
 
 ![](assets/lighting-clusterfuck.png)
 
-## No Simulation
+## No simulation
 Non dynamic hair simulation is always fun.
 
 <video controls="true" allowfullscreen="true" poster="">

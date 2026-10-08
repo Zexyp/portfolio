@@ -19,7 +19,7 @@ I still haven't decided whether the trail is blood or oil.
 </video>
 </div>
 
-## Pro Tip
+## Pro tip
 Take some rubble, stretch it af, ta-da! spikes!
 
 <video controls="true" autoplay="true" muted="true" loop="true" allowfullscreen="true" poster="">

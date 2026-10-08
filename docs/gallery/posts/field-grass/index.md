@@ -11,7 +11,7 @@ codename: folderino
 
 ![](assets/color.png)
 
-## Minimal Trolling
+## Minimal trolling
 What originally started as a single image expanded into a three piece work for a client.
 
 ![](assets/pure.png)
