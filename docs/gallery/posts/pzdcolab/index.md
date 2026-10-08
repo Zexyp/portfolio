@@ -3,6 +3,7 @@ date: 2024-04-29
 image: assets/smooth.png
 title: Shrimp
 description: Adam named it
+codename: pzdcolab
 ---
 
 ![](assets/smooth.png)

@@ -4,6 +4,7 @@ title: Vality
 image: assets/vality.png
 categories:
     - abstract
+codename: mbascy/vality
 ---
 
 ![main](assets/vality.png)

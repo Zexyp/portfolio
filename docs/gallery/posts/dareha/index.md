@@ -5,6 +5,7 @@ title: Dareha
 image: assets/comp.png
 categories:
     - abstract
+codename: dareha
 ---
 
 ![](assets/comp.png)

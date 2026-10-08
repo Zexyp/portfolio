@@ -1,9 +1,10 @@
 ---
 date: 2021-07-19
-title: Mohr
+title: Form of Spaghetti
 image: assets/scary boi balanced.png
 categories:
     - abstract
+codename: mohr
 ---
 
 ![](assets/scary boi balanced.png)

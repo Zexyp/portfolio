@@ -1,7 +1,8 @@
 ---
 date: 2023-01-17
-title: Sithrl
+title: Deep Down
 image: assets/r deep mf.png
+codename: sithrl
 ---
 
 ![](assets/r deep mf.png)

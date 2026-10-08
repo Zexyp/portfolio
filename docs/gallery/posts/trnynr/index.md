@@ -1,7 +1,8 @@
 ---
 date: 2021-12-31
-title: Trnynr
+title: Terrain
 image: assets/final glow.png
+codename: trnynr
 ---
 
 ![](assets/final glow.png)

@@ -5,6 +5,7 @@ image: assets/is that a piss but red.png
 categories:
     - abstract
 description: Cold feeling fire
+codename: tpus
 ---
 
 ![](assets/is that a piss but red.png)

@@ -6,6 +6,7 @@ image: assets/color.png
 categories:
     - realistic
 description: We keep trolling to a minimum
+codename: folderino
 ---
 
 ![](assets/color.png)

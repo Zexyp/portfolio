@@ -91,3 +91,7 @@
 .md-post__header .md-meta__list {
     margin-top: .5em;
 }
+
+h2[id] {
+  scroll-margin-top: 6em;
+}

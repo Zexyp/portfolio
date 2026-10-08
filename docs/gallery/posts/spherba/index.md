@@ -4,6 +4,7 @@ title: Spherba
 image: assets/spherba.png
 categories:
     - abstract
+codename: spherba
 ---
 
 ![](assets/spherba.png)

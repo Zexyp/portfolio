@@ -7,6 +7,7 @@ categories:
 title: Weleven
 description: Windows 11
 image: assets/w2.png
+codename: weleven
 ---
 
 ![](./assets/w2fhd.png)

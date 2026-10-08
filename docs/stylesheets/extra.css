@@ -132,6 +132,10 @@
   margin: .25em
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 [dir="ltr"] .md-nav--integrated > .md-nav__list > .md-nav__item--active .md-nav--secondary,
 [dir="rtl"] .md-nav--integrated > .md-nav__list > .md-nav__item--active .md-nav--secondary {
   border-color: var(--md-default-fg-color);

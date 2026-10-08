@@ -5,6 +5,7 @@ date:
 title: Shline
 image: assets/keep working and reworking.png
 draft: true
+codename: shline
 ---
 
 ![](assets/keep working and reworking.png)
