@@ -187,5 +187,17 @@
         {% include "partials/content.html" %}
       {% endblock %}
     </article>
+    <script>
+// initialize comparisons
+document.querySelectorAll(".img-compare").forEach(comparison => {
+	let range = document.createElement("input");
+	range.type = "range";
+	range.name = "range";
+	comparison.appendChild(range);
+	range.addEventListener("input", () => {
+		comparison.style.setProperty("--_comparison", range.value + "%");
+	})
+});
+    </script>
   </div>
 {% endblock %}

@@ -36,15 +36,10 @@ Smaller spikes on the body are basically a gamble with the noise seed.
 Adding edge highlights really made the spikes pop and elevated their sharpness.
 I do like the simple fake marble that makes the spikes look colder upon ponder.
 
-<figure>
-	<p class="img-compare">
-		<span>
-			<img src="../../../../hbdgb/assets/spikes-pre.png">
-		</span>
-		<img src="../../../../hbdgb/assets/spikes-post.png">
-	</p>
-	<figcaption></figcaption>
-</figure>
+<div class="img-compare">
+	<img src="../../../../hbdgb/assets/spikes-pre.png">
+	<img src="../../../../hbdgb/assets/spikes-post.png">
+</div>
 
 ## Particles
 Simple prism shards made some good glinting elements that really added to the scene.
