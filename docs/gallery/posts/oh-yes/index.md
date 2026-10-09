@@ -1,9 +1,5 @@
 ---
 date: 1000-01-01
-title: semestral
+title: "oh-yes"
 draft: true
 ---
-
-## H
-## Š
-## D

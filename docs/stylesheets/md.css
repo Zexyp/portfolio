@@ -22,10 +22,10 @@
 	--_comparison: 50%;
 	display: grid;
 	width: fit-content;
+}
 
-	& > * {
-		grid-area: 1 / -1;
-	}
+.img-compare > * {
+	grid-area: 1 / -1;
 }
 
 .img-compare img {

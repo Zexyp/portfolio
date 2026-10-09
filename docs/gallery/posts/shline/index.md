@@ -3,12 +3,12 @@ date:
     created: 2024-10-28
     updated: 2025-06-03
 title: Shline
-image: assets/keep working and reworking.png
+image: assets/keep-working-and-reworking.png
 codename: shline
 description: Keep working and reworking
 ---
 
-![](assets/keep working and reworking.png)
+![](assets/keep-working-and-reworking.png)
 
 ## Character
 I was too lazy to model a head, and the whole image is meant to feel unsettling anyway.
@@ -39,7 +39,7 @@ The cloth does look like some kind of table cloth and that was the goal. Nothing
 ## Particles
 This time, the particles were distributed with the flow in mind. Their rotation is aligned with the normal of the displaced plane they follow.
 
-![](assets/i love particles.png)
+![](assets/i-love-particles.png)
 
 Background particles are there just to break up the gradient.
 The rest of the background consists of simple stretched out streaky shapes.
