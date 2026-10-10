@@ -1,0 +1,38 @@
+{% extends "main.html" %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{{ 'overrides/stylesheets/gallery.css' | url }}"> 
+{% endblock %}
+
+<!-- Page content -->
+{% block container %}
+<div class="md-content" data-md-component="content">
+  <div class="md-content__inner">
+
+    <!-- Header -->
+    <header class="md-typeset">
+      {{ page.content }}
+    </header>
+    
+    <!-- Posts -->
+    {% if page.file.src_uri.startswith("gallery") %}
+    <div class="gallery">
+      {% for post in posts %}
+      {% include "partials/gallery-post.html" %}
+      {% endfor %}
+    </div>
+    {% else %}
+    {% for post in posts %}
+      {% include "partials/post.html" %}
+    {% endfor %}
+    {% endif %}
+
+    <!-- Pagination -->
+    {% if pagination %}
+    {% block pagination %}
+    {% include "partials/pagination.html" %}
+    {% endblock %}
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

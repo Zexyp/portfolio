@@ -1,0 +1,109 @@
+:root {
+    --glow-color-1-rgb: 255 0 255;
+    --glow-color-2-rgb: 0 255 255;
+
+    --glow-color-1-rgb: 44 255 24;
+    --glow-color-2-rgb: 24 90 255;
+    --glow-color-backlight-rgb: 255 255 255;
+}
+
+/* yummy base glow 😜 */
+.glow {
+    box-shadow:
+            inset 0 0 60px whitesmoke,
+            inset 20px 0 80px rgb(var(--glow-color-1-rgb)),
+            inset -20px 0 80px rgb(var(--glow-color-2-rgb)),
+            inset 20px 0 300px rgb(var(--glow-color-1-rgb)),
+            inset -20px 0 300px rgb(var(--glow-color-2-rgb)),
+            0 0 50px #fff,
+            -10px 0 80px rgb(var(--glow-color-1-rgb)),
+            10px 0 80px rgb(var(--glow-color-2-rgb));
+}
+
+.glow-hover-outer {
+    transition: .4s;
+}
+.glow-hover-outer:hover, .glow-hover-outer:focus {
+    box-shadow:
+            0 0 25px #fff8,
+            -2.5px 0 20px rgb(var(--glow-color-1-rgb)),
+            2.5px 0 20px rgb(var(--glow-color-2-rgb));
+}
+
+.glow-hover-outer-muted {
+    transition: .4s;
+}
+.glow-hover-outer-muted:hover, .glow-hover-outer:focus {
+    box-shadow:
+            0 0 12.5px #fff4,
+            -1.5px 0 10px rgb(var(--glow-color-1-rgb) / 50%),
+            1.5px 0 10px rgb(var(--glow-color-2-rgb) / 50%);
+}
+
+.glow-hover {
+    transition: .4s;
+}
+.glow-hover:hover, .glow-hover:focus {
+    box-shadow:
+            inset 0 0 15px whitesmoke,
+            inset 20px 0 80px rgb(var(--glow-color-1-rgb)),
+            inset -20px 0 80px rgb(var(--glow-color-2-rgb)),
+            inset 20px 0 300px rgb(var(--glow-color-1-rgb)),
+            inset -20px 0 300px rgb(var(--glow-color-2-rgb)),
+            0 0 25px #fff8,
+            -2.5px 0 20px rgb(var(--glow-color-1-rgb)),
+            2.5px 0 20px rgb(var(--glow-color-2-rgb));
+}
+
+.glow-logo {
+    filter: drop-shadow(-5px 0 15px rgb(var(--glow-color-1-rgb))) drop-shadow(5px 0 15px rgb(var(--glow-color-2-rgb)));
+    transition: 1s;
+}
+
+.glow-logo:hover, .glow-logo:focus {
+    filter: drop-shadow(0 0 15px #fff8) drop-shadow(-5px 0 20px rgb(var(--glow-color-1-rgb))) drop-shadow(5px 0 20px rgb(var(--glow-color-2-rgb)));
+}
+
+/*
+sus but cool
+.glow-logo:hover, .glow-logo:focus {
+    filter: drop-shadow(0 0 15px #fff8) drop-shadow(-5px 0 20px #f0f) drop-shadow(5px 0 20px #0ff);
+}
+*/
+
+.glow-text {
+    color: white;
+    transition: .4s;
+    text-shadow:
+            0 0 25px #fff4,
+            -2.5px 0 20px rgb(var(--glow-color-1-rgb) / 50%),
+            2.5px 0 20px rgb(var(--glow-color-2-rgb) / 50%);
+}
+
+.glow-text:hover, .glow-text:focus {
+    color: white;
+    text-shadow:
+            0 0 25px #fff8,
+            -1px 0 20px rgb(var(--glow-color-1-rgb)),
+            1px 0 20px rgb(var(--glow-color-2-rgb));
+}
+
+.glow-text-flicker {
+    animation: flicker 5s infinite alternate;
+}
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+                0 0 25px #fff8,
+                -2.5px 0 20px rgb(var(--glow-color-1-rgb)),
+                2.5px 0 20px rgb(var(--glow-color-2-rgb)),
+                -5px 0 40px rgb(var(--glow-color-1-rgb)),
+                5px 0 40px rgb(var(--glow-color-2-rgb)),
+                -10px 0 80px rgb(var(--glow-color-1-rgb)),
+                10px 0 80px rgb(var(--glow-color-2-rgb));
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}

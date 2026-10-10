@@ -1,0 +1,74 @@
+.gal-mrsk {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.gal-mrsk img,
+.gal-mrsk video {
+	align-self: center;
+}
+
+.gal-scuk {
+	display: flex;
+}
+
+.gal-scuk img,
+.gal-scuk video {
+	width: 100%;
+}
+
+.img-compare {
+	--_comparison: 50%;
+	display: grid;
+	width: fit-content;
+}
+
+.img-compare > * {
+	grid-area: 1 / -1;
+}
+
+.img-compare img {
+	display: grid;
+	place-content: center;
+}
+
+.img-compare img:nth-child(1) {
+	mask: linear-gradient(to right, #000 0, var(--_comparison), #0000 0);
+}
+
+.img-compare img:nth-child(2) {
+	mask: linear-gradient(to right, #0000 0, var(--_comparison), #000 0);
+}
+
+.img-compare input[type="range"] {
+	appearance: none;
+	-webkit-appearance: none;
+	background: transparent;
+	z-index: 1;
+	cursor: ew-resize;
+	-webkit-tap-highlight-color: transparent;
+	border: 0;
+}
+
+.img-compare input[type="range"]::-webkit-slider-thumb {
+	appearance: none;
+	-webkit-appearance: none;
+	inline-size: 2px;
+	block-size: 100%;
+	background-color: #1fb311;
+	border: none;
+	border-radius: 0;
+	outline: 2px solid var(--md-default-bg-color);
+}
+
+.img-compare input[type="range"]::-moz-range-thumb {
+	appearance: none;
+	-webkit-appearance: none;
+	inline-size: 2px;
+	block-size: 100%;
+	background-color: #1fb311;
+	border: none;
+	border-radius: 0;
+	outline: 2px solid var(--md-default-bg-color);
+}

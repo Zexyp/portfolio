@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "Geist";
+  src: url("../assets/fonts/Geist/Geist-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("../assets/fonts/Geist_Mono/GeistMono-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist Pixel";
+  src: url("../assets/fonts/Geist_Pixel/GeistPixel-Regular-VariableFont_ELSH.ttf") format("truetype");
+  font-style: normal;
+}
+
+:root {
+  --md-text-font: "Geist";
+  --md-code-font: "Geist Mono";
+  --zx-logo-height: 4rem;
+  --zx-border-width: 1px;
+  --zx-header-height: calc(var(--zx-logo-height) + var(--zx-border-width))
+}
+
+
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #ffffff;
+  --md-default-bg-color--secondary: #f0f0f0;
+  --md-default-fg-color: #222222;
+
+  --md-primary-fg-color: #080808;
+
+  --md-accent-fg-color: #008888;
+  --md-typeset-a-color: #1fa311;
+
+  --md-footer-bg-color: #161616;
+  --md-footer-bg-color--dark: #080808;
+
+  --zx-border: var(--zx-border-width) solid #333333;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #111113;
+  --md-default-bg-color--secondary: #0e0e0f;
+  --md-default-fg-color: #eeeeee;
+
+  --md-primary-fg-color: #080808;
+
+  --md-accent-fg-color: #008888;
+  --md-typeset-a-color: #1fb311;
+
+  --md-footer-bg-color: #0f0f11;
+  --md-footer-bg-color--dark: #080808;
+
+  --md-code-bg-color: #212223;
+
+  --zx-border: var(--zx-border-width) solid #222222;
+}
+
+.md-header {
+  border-bottom: var(--zx-border);
+}
+
+.md-tabs {
+  box-shadow: 0 0 16px #0006;
+  border-bottom: var(--zx-border);
+}
+
+.md-footer {
+  box-shadow: 0 0 16px #0006;
+  border-top: var(--zx-border);
+}
+
+.md-footer-meta {
+  border-top: var(--zx-border);
+}
+
+.md-header__button.md-logo {
+  padding: 0;
+  margin: 0;
+  border-left: var(--zx-border);
+  border-right: var(--zx-border);
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  background-color: #000;
+  width: auto;
+  height: var(--zx-logo-height);
+}
+
+.md-header--shadow .md-header__button.md-logo img,
+.md-header--shadow .md-header__button.md-logo svg {
+  width: 4rem;
+  aspect-ratio: 1;
+}
+
+.md-header__topic:first-child {
+  display: none;
+}
+
+.md-tabs__list {
+  border-left: var(--zx-border);
+  border-right: var(--zx-border);
+}
+
+.md-footer-meta .md-grid {
+  padding: 0;
+}
+
+.md-social {
+  border-left: var(--zx-border);
+  border-right: var(--zx-border);
+  padding-left: .6rem;
+  padding-right: .6rem;
+}
+
+.md-social__link {
+  margin: auto;
+}
+
+.md-draft {
+  background-color: #e87d0d;
+  border-radius: .25em;
+  margin: .25em
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.md-typeset .sitemap {
+  margin: 0;
+  font-size: .8em;
+  padding: .5em;
+  margin-left: 1em;
+  margin-right: auto;
+  padding-left: 1.6em;
+  border-left: var(--zx-border);
+}
+.md-typeset .sitemap ul {
+  margin: 0;
+  list-style: none;  
+}
+
+.md-typeset .sitemap .sitemap-title {
+  display: block;
+  font-weight: 500;
+}
+
+.md-typeset .sitemap .sitemap-link {
+  display: block;
+  margin: 0;
+  font-weight: 300;
+  opacity: .5;
+}
+
+.md-copyright .md-copyright__message {
+  font-size: .75em;
+}
+.md-copyright .md-copyright__heart {
+  height: 1em;
+  width: auto;
+  transition: color 500ms;
+}
+.md-copyright .md-copyright__heart:hover {
+  color: hsl(0deg 82% 63%);
+}
+
+[dir="ltr"] .md-nav--integrated > .md-nav__list > .md-nav__item--active .md-nav--secondary,
+[dir="rtl"] .md-nav--integrated > .md-nav__list > .md-nav__item--active .md-nav--secondary {
+  border-color: var(--md-default-fg-color);
+  border-width: var(--shrinky-border-width); /* shrinky interop */
+}
+
+[dir="ltr"] .md-nav--integrated > .md-nav__list > .md-nav__item--active .md-nav--secondary {
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+
+[dir="rtl"] .md-nav--integrated > .md-nav__list > .md-nav__item--active .md-nav--secondary {
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}

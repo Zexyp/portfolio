@@ -1,0 +1,68 @@
+.md-typeset {
+  color: var(--md-typeset-color)
+}
+
+.md-typeset h2 {
+  font-weight: 700;
+  margin-top: .175em
+}
+
+.md-typeset h2+h3 {
+  font-size: 1em;
+  margin-top: -.8em
+}
+
+.md-typeset :target {
+  --md-scroll-margin: 5.2rem
+}
+
+.md-main__inner {
+  margin: 0
+}
+
+.md-main__inner>.md-content,
+.md-main__inner>.md-sidebar--secondary {
+  display: none
+}
+
+.md-content__inner {
+  margin-bottom: 0;
+  padding: 5.2rem 0
+}
+
+.md-content__inner:before {
+  display: none
+}
+
+.md-content header {
+  display: block;
+  transition: opacity .75s
+}
+
+.js .md-content header[hidden] {
+}
+
+.md-typeset .md-button {
+  border-radius: .25em;
+  background-color: var(--md-typeset-a-color);
+  border-width: 0;
+  color: var(--md-primary-bg-color);
+  margin-right: .5rem;
+  margin-top: .5rem
+}
+
+.md-typeset .md-button--secondary {
+  background-color: initial
+}
+
+.md-header:not(.md-header--shadow) {
+  transition: background-color 125ms, transform 125ms cubic-bezier(.1, .7, .1, 1), box-shadow 0ms
+}
+
+.md-header--shadow {
+  transition: background-color .25s, transform .25s cubic-bezier(.1, .7, .1, 1), box-shadow .25s
+}
+
+:root {
+  --md-parallax-perspective: 2.5rem
+}
