@@ -35,22 +35,15 @@
   --md-accent-fg-color: #008888;
   --md-typeset-a-color: #1fa311;
 
-  --md-footer-bg-color--dark: #000;
+  --md-footer-bg-color: #161616;
+  --md-footer-bg-color--dark: #080808;
 
   --zx-border: var(--zx-border-width) solid #333333;
-
-  .md-tabs {
-    border-bottom: var(--zx-border);
-  }
-
-  .md-footer {
-    border-top: var(--zx-border);
-  }
 }
 
 [data-md-color-scheme="slate"] {
-  --md-default-bg-color: #111213;
-  --md-default-bg-color--secondary: #0e0f0f;
+  --md-default-bg-color: #111113;
+  --md-default-bg-color--secondary: #0e0e0f;
   --md-default-fg-color: #eeeeee;
 
   --md-primary-fg-color: #080808;
@@ -58,19 +51,16 @@
   --md-accent-fg-color: #008888;
   --md-typeset-a-color: #1fb311;
 
+  --md-footer-bg-color: #0f0f11;
   --md-footer-bg-color--dark: #080808;
 
   --md-code-bg-color: #212223;
 
   --zx-border: var(--zx-border-width) solid #222222;
+}
 
-  .md-tabs {
-    border-bottom: var(--zx-border);
-  }
-
-  .md-footer {
-    border-top: var(--zx-border);
-  }
+.md-header {
+  border-bottom: var(--zx-border);
 }
 
 .md-tabs {
@@ -80,10 +70,11 @@
 
 .md-footer {
   box-shadow: 0 0 16px #0006;
+  border-top: var(--zx-border);
 }
 
-.md-header {
-  border-bottom: var(--zx-border);
+.md-footer-meta {
+  border-top: var(--zx-border);
 }
 
 .md-header__button.md-logo {
@@ -126,6 +117,10 @@
   padding-right: .6rem;
 }
 
+.md-social__link {
+  margin: auto;
+}
+
 .md-draft {
   background-color: #e87d0d;
   border-radius: .25em;
@@ -134,6 +129,44 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.md-typeset .sitemap {
+  margin: 0;
+  font-size: .8em;
+  padding: .5em;
+  margin-left: 1em;
+  margin-right: auto;
+  padding-left: 1.6em;
+  border-left: var(--zx-border);
+}
+.md-typeset .sitemap ul {
+  margin: 0;
+  list-style: none;  
+}
+
+.md-typeset .sitemap .sitemap-title {
+  display: block;
+  font-weight: 500;
+}
+
+.md-typeset .sitemap .sitemap-link {
+  display: block;
+  margin: 0;
+  font-weight: 300;
+  opacity: .5;
+}
+
+.md-copyright .md-copyright__message {
+  font-size: .75em;
+}
+.md-copyright .md-copyright__heart {
+  height: 1em;
+  width: auto;
+  transition: color 500ms;
+}
+.md-copyright .md-copyright__heart:hover {
+  color: hsl(0deg 82% 63%);
 }
 
 [dir="ltr"] .md-nav--integrated > .md-nav__list > .md-nav__item--active .md-nav--secondary,

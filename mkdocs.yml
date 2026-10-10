@@ -46,6 +46,7 @@ theme:
     - navigation.top
     - navigation.sections
     - navigation.expand
+    - navigation.footer
     - toc.integrate
 
 nav:
@@ -67,6 +68,8 @@ extra:
       link: https://github.com/Zexyp/
     - icon: simple/blender
       link: https://extensions.blender.org/author/1824/
+    - icon: simple/artstation
+      link: https://www.artstation.com/zexyp
     - icon: simple/youtube
       link: https://www.youtube.com/@zexyp44
 

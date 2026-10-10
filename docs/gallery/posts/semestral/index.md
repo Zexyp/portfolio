@@ -1,6 +1,6 @@
 ---
 date: 1000-01-01
-title: semestral
+title: Semestral Works
 draft: true
 ---
 
